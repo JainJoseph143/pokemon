@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <mat-tab-group mat-align-tabs="start">
+            <mat-tab label="Details">
+                <div class="container-fluid">
+                    <div class="row mt-3">
+                        <div class="col-2 card">
+                            <img [src]="pokemonDetails.sprites.other.dream_world.front_default" [alt]="pokemonDetails.name">
+                            <div class="card-body">
+                                <h1 class="card-title">{{pokemonDetails.name | titlecase}}</h1>
+                                <h3>Power</h3>
+                                <mat-list role="list">
+                                    <mat-list-item role="listitem" *ngFor="let type of pokemonDetails.types">
+                                        {{type.type.name}}</mat-list-item>
+                                </mat-list>
+                                <a href="" class="btn btn-dark">Move</a>
+                            </div>
+                        </div>
+                         <div class="col-3">
+                            <img [src]="pokemonDetails.sprites.other.showdown.front_shiny">
+                            <img [src]="pokemonDetails.sprites.other.showdown.back_shiny">
+                        </div>
+                    </div>
+                </div>              
+            </mat-tab>
+            <mat-tab label="Second">Content 2</mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-3  mb-3 " *ngFor="let card of pokemonList.results"
+        (click)="getPokemonDetails(card)"   >
+        <div class="card" matRipple [matRippleColor]="color">
+            <img class="card-img mt-2" [src]="generateTheImgUrl(card.url)" [alt]="card.name">
+            <div class="card-body">
+                <p class="card-text">{{card.name | uppercase}}</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

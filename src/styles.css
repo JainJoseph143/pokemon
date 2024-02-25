@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+header {
+    background-color: #ef5350;
+    height: 3.125rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+.main-wrapper{
+    position: relative;
+    top: 4.126rem;
+}
+.card-img{
+    width: 100%;
+    height: 149px;
+  }
+  .card-body {
+    background: #f20d0dba;
+    border-top-right-radius: 34px;
+    color: white;
+  }
+  .log-img{
+    height: 41px;
+    margin: 0 0 0 10%;
+  }
+  
+ 
