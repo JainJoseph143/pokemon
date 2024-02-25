@@ -1,7 +1,7 @@
 # Pokemon
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
-use npm install to install the dependancys.
+use  `npm install ` for install the dependancys.
 
 ## Development server
 
